@@ -1,0 +1,121 @@
+.todo-list-container {
+  max-width: 900px;
+}
+
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #10b981;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  z-index: 1000;
+  animation: slideInRight 0.3s ease, slideOutRight 0.3s ease 1.7s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+
+.add-todo-button-container {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-todo-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  min-width: 180px;
+}
+
+.add-todo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+}
+
+.add-todo-btn:active {
+  transform: translateY(0);
+}
+
+.form-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-lg);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todos-container {
+  display: grid;
+  gap: 15px;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .add-todo-btn {
+    width: 100%;
+  }
+
+  .form-wrapper {
+    padding: 20px;
+  }
+
+  .todos-container {
+    gap: 12px;
+  }
+}
