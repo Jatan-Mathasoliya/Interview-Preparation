@@ -1,7 +1,6 @@
 import express from 'express';
 import multer from 'multer';
 
-
 const app = express();
 const PORT = 5005;
 
@@ -24,7 +23,7 @@ app.post('/upload', upload.single('file'), (req, res)=>{
     }
 
     res.json({message : 'File upload successfully'})
-})
+}) 
 
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`)

@@ -27,6 +27,7 @@ button:hover {
   cursor: not-allowed;
   opacity: 0.5;
 }
+
 button.active {
   background: #007bff;
   color: #fff;

@@ -4,13 +4,13 @@ function Todo() {
     const [todos, settodos] = useState([])
     const [input, setinput] = useState("")
 
-    // useEffect(() => {
-    //     let storedTodos = JSON.parse(localStorage.getItem('Todos'));
+    useEffect(() => {
+        let storedTodos = JSON.parse(localStorage.getItem('Todos'));
 
-    //     settodos(storedTodos || []);
+        settodos(storedTodos || []);
 
-    //     console.log(todos);
-    // }, [])
+        console.log(todos);
+    }, [])
 
     async function addTodo(todo) {
         if (todo === "") return;
@@ -31,9 +31,7 @@ function Todo() {
     }
 
     async function removeTodo(index) {
-
-        console.log(index)
-
+        
         let todoArray = JSON.parse(localStorage.getItem('Todos'));
 
         todoArray = todoArray.filter(a => todoArray.indexOf(a) != index)

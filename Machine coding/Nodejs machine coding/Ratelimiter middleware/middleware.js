@@ -6,4 +6,4 @@ const rateLimiterMiddleware = rateLimiter({
     message: "You are making Too many request, please try again after 1 minute"
 })
 
-export default rateLimiterMiddleware;   
+export default rateLimiterMiddleware;

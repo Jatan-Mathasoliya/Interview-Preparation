@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Apple iPhone 14",
+    "category": "Mobile",
+    "price": 699,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23",
+    "category": "Mobile",
+    "price": 649,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Apple Watch Series 8",
+    "category": "Wearable",
+    "price": 399,
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Sony WH-1000XM5 Headphones",
+    "category": "Audio",
+    "price": 349,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Dell XPS 13 Laptop",
+    "category": "Laptop",
+    "price": 999,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "MacBook Air M2",
+    "category": "Laptop",
+    "price": 1099,
+    "inStock": false
+  },
+  {
+    "id": 7,
+    "name": "Logitech MX Master 3 Mouse",
+    "category": "Accessories",
+    "price": 99,
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Apple AirPods Pro",
+    "category": "Audio",
+    "price": 249,
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "name": "Samsung 55-inch 4K Smart TV",
+    "category": "TV",
+    "price": 799,
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "name": "Amazon Echo Dot (5th Gen)",
+    "category": "Smart Home",
+    "price": 49,
+    "inStock": true
+  }
+]
